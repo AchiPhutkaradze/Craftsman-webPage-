@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "san-serif";
+}
+header {
+  background-color: #373535;
+  height: 47px;
+  width: 100%;
+  padding: 11.5px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.location {
+  display: flex;
+  gap: 10px;
+}
+.address {
+  color: #bbcc99;
+  font-size: 14px;
+  line-height: 24px;
+}
+.three-icon {
+  display: flex;
+  gap: 10px;
+}
+.slider {
+  background-color: #343436;
+  height: 243px;
+  display: flex;
+  background-image: url(./assets/man.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: -40px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+.offer {
+  line-height: 22.3px;
+  font-size: 18px;
+  color: #ffffffd9;
+}
+.company-motto {
+  line-height: 10px;
+  font-size: 10px;
+  color: #ffffffbd;
+}
+.search-div {
+  padding: 31px 20px 51px;
+}
+.input-background {
+  height: 55px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 100%
+  );
+  width: 100%;
+  border-radius: 11px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.input-div {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+#search-input {
+  width: 258px;
+  background-color: #87898e;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 16.8px;
+  height: 40px;
+  color: #f9f1d9;
+  padding-left: 14.3px;
+}
+#search-input::placeholder {
+  color: white;
+  opacity: 0.4;
+}
+#search-button {
+  background-color: #c6542d;
+  width: 45px;
+  height: 40px;
+  border-radius: 10px;
+}
