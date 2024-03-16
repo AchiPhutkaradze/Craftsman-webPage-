@@ -491,5 +491,285 @@ header {
 }
 .input-div {
   width: 100%;
-  max-width: 777px;
+  max-width: 547px;
+}
+.cards-for-desktop {
+  display: none;
+}
+#line-image-for-desk {
+  display: none;
+}
+
+.text-about-partners {
+  display: none;
+}
+.search-offers {
+  display: none;
+}
+.navigation-for-desk {
+  display: none;
+}
+.location-for-desk {
+  display: none;
+}
+#trash-icon {
+  display: none;
+}
+.sign-in {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .cards {
+    display: none;
+  }
+  .cards-for-desktop {
+    display: flex;
+    gap: 2px;
+    width: 1440px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 59px;
+    margin: auto;
+  }
+  .plumbing-div-for-desktop {
+    padding: 20px 33px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    border-radius: 1px;
+    box-shadow: 10px 5px 5px 5px #fbf7f7;
+    width: 371px;
+  }
+  .card-text span {
+    color: black;
+    font-size: 18px;
+  }
+  .plumbing-div-for-desktop img {
+    width: 50px;
+    height: 50px;
+  }
+  .green {
+    background-color: #9fbc97;
+  }
+  .company-information {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .company-information img {
+    align-self: inherit;
+  }
+  .announcement-cup {
+    flex-direction: row;
+  }
+  .ask h1 {
+    font-size: 18px;
+  }
+  .offer-one p {
+    font-size: 20px;
+  }
+
+  .offer-box div p {
+    font-size: 20px;
+  }
+  .announcement-cup {
+    margin-top: 38px;
+  }
+  .order-two {
+    order: 2;
+  }
+  .offer-box {
+    margin-top: 30px;
+  }
+  .company-offers {
+    padding: 0;
+  }
+  .how-work {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    width: 1114px;
+    margin: auto;
+  }
+  #line-image-for-desk {
+    display: flex;
+  }
+  .faq-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 130px;
+    align-items: center;
+  }
+  .couple-img-and-text {
+    margin: 0;
+  }
+  .faq-accordion {
+    padding: 0;
+    min-width: 720px;
+  }
+  .couple-img-and-text div {
+    font-size: 18px;
+  }
+  .couple-img-and-text .faq-p {
+    font-size: 20px;
+  }
+  .couple-img-and-text img {
+    min-width: 450px;
+    margin-top: 34px;
+  }
+  .contact {
+    flex-direction: row;
+    margin-top: 60px;
+    padding: 53px 0;
+    justify-content: center;
+  }
+  .map {
+    max-width: 436px;
+  }
+  .contact h1 {
+    font-size: 18px;
+  }
+  .contact p {
+    font-size: 20px;
+  }
+  .send {
+    justify-content: inherit;
+  }
+  .articles-title h1 {
+    font-size: 18px;
+  }
+  .last-added-p p {
+    font-size: 20px;
+  }
+  .article {
+    display: flex;
+    width: 646px;
+    gap: 24px;
+  }
+  .one-artc {
+    width: 566px;
+    flex-direction: column;
+    display: flex;
+  }
+  #santeknika {
+    width: 100%;
+  }
+  .text-about-partners {
+    display: flex;
+    justify-content: space-between;
+  }
+  .partners h1 {
+    display: none;
+  }
+  .company-logos {
+    gap: 40px;
+  }
+  .partners {
+    width: 1081px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 103px 0 43px;
+  }
+  .text-about-partners h3 {
+    font-size: 20px;
+  }
+  .text-about-partners span {
+    font-size: 18px;
+    color: #c6542d;
+  }
+  .slider {
+    background-position-x: calc(100% - 83px);
+    background-image: url(./assets/men-for-desk.svg);
+    height: 408px;
+  }
+  .search-div {
+    padding-top: 91px;
+  }
+  .texts {
+    width: 584px;
+  }
+  .offer {
+    font-size: 31px;
+    line-height: 36.4px;
+  }
+  .company-motto {
+    font-size: 16px;
+    line-height: 15.2px;
+    letter-spacing: 2px;
+  }
+  .input-background {
+    height: 136px;
+    flex-direction: column;
+    padding: 20px;
+    align-items: start;
+  }
+  .search-input {
+    align-items: inherit;
+  }
+  .search-offers {
+    display: flex;
+    gap: 16px;
+    padding-top: 17px;
+    align-items: center;
+  }
+  .search-offers div {
+    text-align: center;
+    padding: 10px 13px;
+    border-radius: 10px;
+    border: 1px solid #a1adb326;
+    background-color: #6564644d;
+    color: #8f958e;
+  }
+  .search-offers span {
+    color: #ffffff;
+  }
+  header {
+    height: 80px;
+  }
+  .location-for-desk {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    align-items: center;
+    padding: 13px 14px 11px 19px;
+  }
+  .location {
+    display: none;
+  }
+  .navigation-for-desk {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  hr {
+    width: 2px;
+    height: 20px;
+    background-color: #ffffff26;
+  }
+  li {
+    list-style: none;
+    color: #f3f3f3;
+  }
+  #burgerMenu-icon {
+    display: none;
+  }
+  #person {
+    display: none;
+  }
+  #trash-icon {
+    display: block;
+  }
+  .sign-in {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    align-items: center;
+    padding: 13px 14px 11px 19px;
+    color: white;
+  }
+  .location-for-desk span {
+    color: #bbcc99;
+  }
 }

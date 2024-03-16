@@ -16,11 +16,34 @@
         />
         <p class="address">თბილისი, ვაჟა ფშაველა 32</p>
       </div>
+      <div class="location-for-desk">
+        <img src="./assets/location-logo.svg" alt="">
+        <span>შენი ლოკაცია</span>
+        <img src="./assets/arrow.svg" alt="">
+      </div>
+      <nav class="navigation-for-desk">
+        <li>მთავარი</li>
+        <hr />
+        <li>ჩვენს შესახებ</li>
+        <hr />
+        <li>სერვისები</li>
+        <img src="./assets/arrow.svg" alt="">
+        <hr />
+        <li>პროფესიები</li>
+        <hr />
+        <li>ხელოსნები</li>
+        
+      </nav>
       <div class="three-icon">
         <img src="./assets/notification-icon.svg" alt="" />
-        <img src="./assets/person.svg" />
-        <img src="./assets/burgerMenu-icon.svg" />
-      </div>
+        <img src="./assets/person.svg" id="person" />
+        <img src="./assets/burgerMenu-icon.svg"  id="burgerMenu-icon"/>
+      <img src="./assets/trash-icon.svg" id="trash-icon">
+    <div class="sign-in">
+      <img src="./assets/person.svg" />
+      <span>შესვლა</span>
+    </div>  
+    </div>
     </header>
     <main>
       <div class="slider">
@@ -37,6 +60,12 @@
               <button id="search-button">
                 <img src="./assets/search-icon.svg" alt="" />
               </button>
+            </div>
+            <div class="search-offers">
+              <div>ტექნიკის შეკეთება</div>
+              <div> კარის გაღება</div>
+              <div>კანალიზაციის წმენდა</div>
+<span>ნახე მეტი</span>
             </div>
           </div>
         </div>
@@ -57,6 +86,62 @@
               >წყლის მილების დაქსელვა  წყლის ჟონვის მიზეზის დადგენა ძველი
               მილების ახლით აღდგენა აბაზანის ონკანის მონტაჟი </span
             >
+          </div>
+        </div>
+      </section>
+      <section class="cards-for-desktop">
+        <div class="plumbing-div-for-desktop green">
+          <img src="./assets/plumbing.svg" />
+          <div class="card-text">
+            <span>სანტექნიკა</span>
+            <span
+              >წყლის მილების დაქსელვა  წყლის ჟონვის მიზეზის დადგენა ძველი
+              მილების ახლით აღდგენა აბაზანის ონკანის მონტაჟი </span
+            >
+          </div>
+        </div>
+        <div class="plumbing-div-for-desktop">
+          <img src="./assets/kran.svg" />
+          <div class="card-text">
+            <span>მილების წმენდვა</span>
+            <span
+              >კანალიზაციის გაწმენდა ტრაპის დემონტაჟი მონტაჟი აბაზანის
+              აქსესუარების მონტაჟი
+            </span>
+            >
+          </div>
+        </div>
+        <div class="plumbing-div-for-desktop">
+          <img src="./assets/technic.svg" />
+          <div class="card-text">
+            <span>ტექნიკის შეკეთება</span>
+            <span>ყველა სახის ტექნიკის შეკეთება, გადაკვრა, განახლება </span>
+          </div>
+        </div>
+        <div class="plumbing-div-for-desktop">
+          <img src="./assets/light.svg" />
+          <div class="card-text">
+            <span>ელექტროობა</span>
+            <span
+              >დაპროექტება, დაქსელვა, ჭაღის/სანათის დამონტაჟება, დიაგნოსტიკა,
+              წერტილების დამატება
+            </span>
+          </div>
+        </div>
+        <div class="plumbing-div-for-desktop">
+          <img src="./assets/roof.svg" />
+          <div class="card-text">
+            <span>სახურავის რემონტი</span>
+            <span
+              >სახურავის მონტაჟი და აწყობა: თბოიზოლაცია, ჰიდროიზოლაცია.
+            </span>
+          </div>
+        </div>
+        <div class="plumbing-div-for-desktop">
+          <img src="./assets/universal.svg" />
+          <div class="card-text">
+            <span>უნივერსალური</span>
+            <span>სახლის სრული რემონტი </span>
           </div>
         </div>
       </section>
@@ -88,7 +173,7 @@
             </div>
           </div>
           <div class="announcement-cup">
-            <div>
+            <div class="order-two">
               <img src="./assets/cup.svg" />
               <p>
                 კვალიფიცირებული <br />
@@ -125,6 +210,7 @@
               ინსტრუქციას და დაჯავშნე <br />სასურველი დრო</span
             >
           </div>
+          <img src="./assets/line.svg" id="line-image-for-desk" />
           <div class="card">
             <img src="./assets/confirm-reservation-icon.svg" alt="" />
             <p>დაადასტურე ჯავშანი</p>
@@ -133,6 +219,8 @@
               შეტყობინებას</span
             >
           </div>
+          <img src="./assets/line.svg" id="line-image-for-desk" />
+
           <div class="card">
             <img src="./assets/location.svg" alt="" />
             <p>მიიღე მომსახურეობა ადგილზე</p>
@@ -223,8 +311,8 @@
           <p>ბოლოს დადებული სტატიები</p>
         </div>
         <div class="articles-container">
-          <div class="article">
-            <img src="./assets/santeknika.svg" />
+          <div class="article one-artc">
+            <img src="./assets/santeknika.svg" id="santeknika" />
             <div class="about">
               <p class="date">Handyman • 1 Jan 2023</p>
               <div class="service-name">
@@ -242,40 +330,42 @@
               <button>ონკანის შეკეთება</button>
             </div>
           </div>
-          <div class="article">
-            <img src="./assets/muyaos-montaji.svg" />
-            <div class="about">
-              <p class="date">Handyman • 1 Jan 2023</p>
-              <div class="service-name">
-                <p>თაბაშირ-მუყაოს კონსტრუქციების მონტაჟი</p>
-                <img src="./assets/icon-wrap.svg" />
+          <div class="flex desktop-version">
+            <div class="article">
+              <img src="./assets/muyaos-montaji.svg" />
+              <div class="about">
+                <p class="date">Handyman • 1 Jan 2023</p>
+                <div class="service-name">
+                  <p>თაბაშირ-მუყაოს კონსტრუქციების მონტაჟი</p>
+                  <img src="./assets/icon-wrap.svg" />
+                </div>
+                <span
+                  >„კედლის დაფარვის სამუშაოებში“ საბაზო პროფესიული
+                  კვალიფიკაც</span
+                >
+                <div class="two-button">
+                  <button>შეკიდული ჭერები</button>
+                  <button>მონტაჟი</button>
+                </div>
               </div>
-              <span
-                >„კედლის დაფარვის სამუშაოებში“ საბაზო პროფესიული
-                კვალიფიკაც</span
-              >
             </div>
-            <div class="two-button">
-              <button>შეკიდული ჭერები</button>
-              <button>მონტაჟი</button>
-            </div>
-          </div>
-          <div class="article">
-            <img src="./assets/computer.networks.svg" />
-            <div class="about">
-              <p class="date">Handyman • 1 Jan 2023</p>
-              <div class="service-name">
-                <p>კომპიუტერული ქსელები</p>
-                <img src="./assets/icon-wrap.svg" />
+            <div class="article">
+              <img src="./assets/computer.networks.svg" />
+              <div class="about">
+                <p class="date">Handyman • 1 Jan 2023</p>
+                <div class="service-name">
+                  <p>კომპიუტერული ქსელები</p>
+                  <img src="./assets/icon-wrap.svg" />
+                </div>
+                <span
+                  >საგანმნათლებლო პროგრამის მიზანია, მოამზადოს ინფორმაციის
+                  ტექნოლოგიების სფეროსთვის
+                </span>
+                <div class="two-button">
+                  <button>ქსელები</button>
+                  <button>სადენები</button>
+                </div>
               </div>
-              <span
-                >საგანმნათლებლო პროგრამის მიზანია, მოამზადოს ინფორმაციის
-                ტექნოლოგიების სფეროსთვის
-              </span>
-            </div>
-            <div class="two-button">
-              <button>ქსელები</button>
-              <button>სადენები</button>
             </div>
           </div>
         </div>
@@ -284,10 +374,16 @@
         </div>
       </section>
       <div class="partners">
-        <h1>
-          ჩვენი პარტნიორი კომპანიები <br />
-          <span>თანამშრომლობისთვის+</span>
-        </h1>
+      
+          <h1>
+            ჩვენი პარტნიორი კომპანიები <br />
+            <span>თანამშრომლობისთვის+</span>
+          </h1>
+          <div class="text-about-partners">
+            <h3>ჩვენი პარტნიორი კომპანიები </h3>
+            <span>თანამშრომლობისთვის+</span>
+          </h1>
+        </div>
         <div class="company-logos">
           <img src="./assets/partner-companys-logo/s-panel-logo.svg" alt="" />
           <img src="./assets/partner-companys-logo/rectangle-logo.svg" alt="" />
@@ -304,6 +400,8 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      
+    </footer>
   </body>
 </html>
