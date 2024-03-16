@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
+
 body {
   font-family: "san-serif";
 }
@@ -30,7 +32,6 @@ header {
 .slider {
   background-color: #343436;
   height: 243px;
-  display: flex;
   background-image: url(./assets/man.svg);
   background-repeat: no-repeat;
   background-position-x: right;
@@ -45,16 +46,19 @@ header {
 }
 .offer {
   line-height: 22.3px;
-  font-size: 18px;
+  font-size: clamp(1rem, 2.5vw, 4rem);
   color: #ffffffd9;
 }
 .company-motto {
   line-height: 10px;
-  font-size: 10px;
   color: #ffffffbd;
+  font-size: clamp(0.4rem, 2.5vw, 1rem);
 }
 .search-div {
   padding: 31px 20px 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .input-background {
   height: 55px;
@@ -69,14 +73,16 @@ header {
   display: flex;
   align-items: center;
   margin-top: 40px;
+  max-width: 760px;
 }
-.input-div {
+.search-input {
   gap: 10px;
   display: flex;
   align-items: center;
+  width: 100%;
 }
-#search-input {
-  width: 258px;
+.search-input input {
+  width: 100%;
   background-color: #87898e;
   border-radius: 10px;
   font-size: 14px;
@@ -85,7 +91,7 @@ header {
   color: #f9f1d9;
   padding-left: 14.3px;
 }
-#search-input::placeholder {
+.search-input input::placeholder {
   color: white;
   opacity: 0.4;
 }
@@ -94,4 +100,396 @@ header {
   width: 45px;
   height: 40px;
   border-radius: 10px;
+}
+.service {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.service div {
+  width: 10px;
+  height: 10px;
+  background-color: #c6542d;
+}
+.service span {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 16.8px;
+}
+.popular-service {
+  margin: 57px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.popular-service p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 19.2px;
+  font-weight: 600;
+}
+.cards {
+  margin-top: 40px;
+}
+.plumbing-div {
+  padding: 20px 33px 20px 20px;
+  background-color: #9fbc97;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  border-radius: 1px;
+}
+.plumbing-div img {
+  width: 50px;
+  height: 50px;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.card-text span {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: clamp(1, 2.5, 2);
+  color: #ffffff;
+}
+.company-information {
+  margin-top: 112px;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+.company-information img {
+  width: 100%;
+  max-width: 700px;
+  align-self: center;
+}
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #c6542d;
+}
+.company-offers {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 145px;
+}
+.ask {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.ask h1 {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 19.2px;
+}
+
+.offer-one {
+  padding-top: 22px;
+}
+.offer-one p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  color: #000000;
+  font-weight: 600;
+}
+.offer-box {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.offer-box div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.offer-box div img {
+  width: 20px;
+}
+.offer-box div p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+.announcement-cup {
+  display: flex;
+  gap: 19px;
+  margin-top: 45px;
+  flex-direction: column;
+}
+.announcement-cup div {
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  padding: 23px;
+  display: flex;
+  gap: 19px;
+}
+.announcement-cup div p {
+  color: #37393f;
+  font-size: 16px;
+}
+.announcement-cup div img {
+  width: 40px;
+}
+.more {
+  padding-top: 50px;
+  border-bottom: 1px solid #df5c46;
+  width: 139px;
+}
+
+.how-work div {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.how-work div .square {
+  margin-left: 20px;
+}
+.how-work-it-p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+.how-work .motto {
+  padding-top: 15px;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+.service-card-div {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-card-div .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  height: 273px;
+  width: 290px;
+}
+.couple-img-and-text {
+  margin-top: 108px;
+  display: flex;
+  flex-direction: column;
+}
+.couple-img-and-text div {
+  display: flex;
+  gap: 6px;
+  margin-left: 20px;
+  align-items: center;
+}
+.couple-img-and-text div {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+.couple-img-and-text .faq-p {
+  padding-top: 15px;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+.couple-img-and-text img {
+  margin-top: 54px;
+  width: 50%;
+  align-self: center;
+}
+.faq-accordion {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.faq-accordion li {
+  display: flex;
+  background-color: #f6f6f6;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+.faq-accordion li p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 600;
+}
+.contact {
+  background-color: #f6f6f6;
+  margin-top: 84px;
+  padding: 32px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+}
+.contact h1 {
+  color: #c6542dcc;
+  line-height: 22.08px;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+.contact p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  color: #333333;
+  font-weight: 600;
+  padding-top: 15px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+  align-items: center;
+}
+.name-input {
+  display: flex;
+  flex-direction: column;
+}
+.inputs div input {
+  border-radius: 10px;
+  border: 1px solid #c5c5c5db;
+  width: 100%;
+  padding: 11.5px 16px;
+}
+.send {
+  padding-top: 30px;
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.send div {
+  text-align: center;
+}
+.send-btn {
+  background-color: #c6542d;
+  border-radius: 10px;
+  padding: 11px 0;
+  min-width: 140px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+.send div span {
+  font-size: 10px;
+  line-height: 14.5px;
+}
+.articles {
+  margin-top: 41.5px;
+  padding: 0 24px;
+}
+.articles-title {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.last-added-p {
+  padding-top: 19px;
+}
+.last-added-p p {
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 19.36px;
+}
+.articles-title h1 {
+  color: #37393f;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-weight: 300;
+}
+.articles-container {
+  padding-top: 61px;
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about {
+  padding-top: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.date {
+  color: #4a3aff;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.service-name {
+  display: flex;
+  justify-content: space-between;
+}
+.service-name img {
+  align-self: flex-start;
+}
+.service-name p {
+  line-height: 28px;
+  color: #1a1a1a;
+  font-size: 16px;
+}
+.about span {
+  color: #667085;
+  line-height: 24px;
+  font-size: 14px;
+}
+.two-button {
+  display: flex;
+  gap: 10px;
+  margin-top: 19px;
+}
+.two-button button {
+  background-color: #e7f8ee;
+  padding: 4px 10px;
+  color: #26a95e;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.article {
+  width: 325px;
+}
+.see-more {
+  margin-top: 37px;
+  display: flex;
+  justify-content: end;
+}
+.see-more button {
+  width: 140px;
+  height: 40px;
+  color: #ffffff;
+  line-height: 16.8px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #373535;
+}
+.partners {
+  margin-top: 117px;
+}
+.partners h1 {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: clamp(1, 2.5, 1);
+  font-weight: 700;
+  padding-left: 20px;
+}
+.partners h1 span {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 18px;
+  font-weight: 500;
+  color: #c6542d;
+}
+.company-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.map {
+  align-self: center;
+  max-width: 590px;
+  width: 100%;
+}
+.map img {
+  width: 100%;
+}
+.input-div {
+  width: 100%;
+  max-width: 777px;
 }
