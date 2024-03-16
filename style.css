@@ -521,6 +521,11 @@ header {
 footer {
   display: none;
 }
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 @media screen and (min-width: 1440px) {
   .cards {
     display: none;
