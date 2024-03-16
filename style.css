@@ -518,6 +518,9 @@ header {
 .sign-in {
   display: none;
 }
+footer {
+  display: none;
+}
 @media screen and (min-width: 1440px) {
   .cards {
     display: none;
@@ -759,6 +762,8 @@ header {
   }
   #trash-icon {
     display: block;
+    width: 20px;
+    height: 19.5px;
   }
   .sign-in {
     display: flex;
@@ -771,5 +776,104 @@ header {
   }
   .location-for-desk span {
     color: #bbcc99;
+  }
+  footer {
+    background-image: url(./assets/footer-images/bg-img.svg);
+    height: 431px;
+    padding: 22px 39px;
+    display: flex;
+    gap: 183px;
+    justify-content: center;
+  }
+  .about-compn {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: start;
+    width: 228px;
+  }
+  .about-compn img {
+    height: 40px;
+  }
+  .social {
+    width: 19px;
+    display: flex;
+    gap: 16px;
+  }
+  .about-compn p {
+    color: #a1a3a9;
+  }
+  .social img {
+    width: 19px;
+  }
+  .footer-service nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 24px;
+  }
+  .footer-service nav li {
+    color: #999999;
+  }
+  .footer-service p {
+    color: white;
+  }
+  .footer-company nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 24px;
+  }
+  .footer-company p {
+    color: white;
+  }
+  .footer-company li {
+    color: #999999;
+  }
+  .contact-addres {
+    display: flex;
+    gap: 12px;
+    padding-top: 24px;
+    border-bottom: 2px dotted white;
+    padding-bottom: 14px;
+    height: 74px;
+  }
+  .addres span {
+    color: #d9d9d9;
+  }
+  #cl {
+    color: white;
+  }
+  .footer-contact p {
+    color: white;
+  }
+  .how-work-it-p {
+    font-size: 18px;
+  }
+  .how-work .motto {
+    font-size: 20px;
+  }
+  .service span {
+    font-size: 18px;
+  }
+  .popular-service p {
+    font-size: 20px;
+  }
+  #notification-icon {
+    width: 18px;
+    height: 21px;
+  }
+  .three-icon {
+    align-items: center;
+    gap: 29px;
+  }
+  .for-mobile {
+    display: flex;
+    gap: 13px;
+    justify-content: end;
+    padding-top: 22px;
+  }
+  .see-more button {
+    margin-right: 70px;
   }
 }
