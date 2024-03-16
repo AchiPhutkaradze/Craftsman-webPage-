@@ -887,8 +887,11 @@ footer {
   }
   .articles-container {
     display: grid;
-    grid-template-columns: 600px 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 210px;
+    justify-items: center;
+    max-width: 93.75rem;
+    margin: auto;
   }
   .computer-net {
     grid-row: 2;
